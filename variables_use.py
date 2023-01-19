@@ -7,4 +7,4 @@ company = employer = petitioner = "Company"
 full_name, isEmployee, street_no = "Krishna", True, 555
 
 print(f"Company details: {company} , {employer} , {petitioner}")
-print(f"Details: {full_name} , {street_no} , {isEmployee}")
+print("Details: {} , {} , {}".format(full_name, street_no, isEmployee))
