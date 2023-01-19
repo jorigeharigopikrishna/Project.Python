@@ -1,0 +1,11 @@
+int_same_length_tuple = (1, 2, 3, 4, 5, 6)
+str_same_length_tuple = ("a", "b", "c", "d", "e", "f")
+zipped_same_object = zip(int_same_length_tuple, str_same_length_tuple)
+tuple_same_zip = tuple(zipped_same_object)
+print(tuple_same_zip)
+
+int_diff_length_tuple = (1, 2, 3, 6)
+str_diff_length_tuple = ("a", "b", "c", "d", "e", "f")
+zipped_diff_object = zip(int_diff_length_tuple, str_diff_length_tuple)
+tuple_diff_zip = tuple(zipped_diff_object)
+print(tuple_diff_zip)
