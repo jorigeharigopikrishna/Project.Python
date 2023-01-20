@@ -1,4 +1,10 @@
 fruits_list = ["Apple", "Banana", "Custard", "Grape", "Lemon"]
+nested_list = [
+    ["HTML", "CSS", "Javascript"],
+    ["Angular", "React"],
+    ["C", "C++", "C#", "Java", "Python"],
+    ["ML", "AI", "Data Science"]
+]
 
 element_1 = fruits_list[1]
 fruits_list[1] = "Berry"
