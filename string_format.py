@@ -17,5 +17,9 @@ print(string_format_3)
 
 num_1 = 24
 num_2 = 50
-string_format_4 = "Addition of %s and %s is %s" %(num_1, num_2, num_1 + num_2)
-print(string_format_4)
+string_format_num_1 = "Number 1 is %s" % num_1
+print(string_format_num_1)
+string_format_with_s = "Addition of %s and %s is %s" %(num_1, num_2, num_1 + num_2)
+print(string_format_with_s)
+string_format_with_d = "Addition of %d and %d is %d" %(num_1, num_2, num_1 + num_2)
+print(string_format_with_d)
