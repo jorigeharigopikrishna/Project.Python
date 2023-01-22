@@ -24,3 +24,17 @@ for key in details_dict:
 
 for key, value in details_dict.items():
     print(f"Key is {key} and its value is {value}")
+
+for fruit in fruits_list:
+    print(fruit)
+else:
+    print("Executed all elements in the list")
+
+for num in range(1, 5):
+    print(num)
+
+for num in range(1, 10, 3):
+    print(num)
+
+for num in reversed(range(1, 5)):
+    print(num)
