@@ -38,3 +38,39 @@ for num in range(1, 10, 3):
 
 for num in reversed(range(1, 5)):
     print(num)
+
+for fruit in fruits_list:
+    if fruit == "Custard":
+        print("Custard is found")
+        break
+        print("Code after break statement")
+    print(fruit)
+else:
+    print("Executed all elements in the list")
+
+for fruit in fruits_list:
+    if fruit == "Custard":
+        print("Custard is found")
+        continue
+        print("Code after continue statement")
+    print(fruit)
+else:
+    print("Executed all elements in the list")
+
+for fruit in fruits_list:
+    if fruit == "Custard":
+        print("Custard is found")
+        pass
+        print("Code after pass keyword")
+    print(fruit)
+else:
+    print("Executed all elements in the list")
+
+for fruit in fruits_list:
+    if fruit == "Custard":
+        print("Custard is found")
+        exit()
+        print("Code after exit method")
+    print(fruit)
+else:
+    print("Executed all elements in the list")
