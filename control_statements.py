@@ -34,9 +34,6 @@ else:
     print("Tomato is not in set")
 
 num = 101
-num_str = "Greater than" if num > 100 else "Less than"
-print(num_str)
-
 if num < 100:
     print("Number is less than 100")
 elif 100 < num < 200:
