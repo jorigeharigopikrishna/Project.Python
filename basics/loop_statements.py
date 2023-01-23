@@ -74,3 +74,78 @@ for fruit in fruits_list:
     print(fruit)
 else:
     print("Executed all elements in the list")
+
+var_number = 20
+while var_number < 25:
+    print(var_number)
+    var_number += 1
+print(var_number)
+
+var_string_1 = ""
+while var_string_1:
+    print("While loop in case of empty string")
+print("Empty", var_string_1)
+
+var_num = 1
+while var_num in range(1, 5):
+    print(var_num)
+    var_num += 1
+print("Last element", var_num)
+
+var_number_2 = 5
+while var_number_2: print("Element is"); print(var_number_2); var_number_2 -= 1
+print("Last element is", var_number_2)
+
+it = 0
+while it < len(fruits_list):
+    print(it)
+    print(fruits_list[it])
+    it += 1
+print(it)
+
+it = 0
+while it < len(fruits_list):
+    print(it)
+    print(fruits_list[it])
+    if fruits_list[it] == "Grape":
+        break
+        print("After break statement")
+    it += 1
+else:
+    print("Executed all elements in the list")
+
+
+it = 0
+while it < len(fruits_list):
+    print(it)
+    print(fruits_list[it])
+    if fruits_list[it] == "Grape":
+        it += 1
+        continue
+        print("After continue statement")
+    it += 1
+else:
+    print("Executed all elements in the list")
+
+it = 0
+while it < len(fruits_list):
+    print(it)
+    print(fruits_list[it])
+    if fruits_list[it] == "Grape":
+        pass
+        print("After pass keyword")
+    it += 1
+else:
+    print("Executed all elements in the list")
+
+it = 0
+while it < len(fruits_list):
+    print(it)
+    print(fruits_list[it])
+    if fruits_list[it] == "Grape":
+        exit()
+        print("After exit() method")
+    it += 1
+else:
+    print("Executed all elements in the list")
+print("Last index while looping", it)
