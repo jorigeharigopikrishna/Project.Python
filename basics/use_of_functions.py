@@ -45,8 +45,16 @@ function_with_positional_arguments("hari", "krishna")
 
 # Positional arguments with complex datatype
 def function_with_positional_arguments_complex_type(items):
-    print(items)
-    for i in items:
-        print(i)
+    if len(items) == 0:
+        print("No elements in the collection")
+        return None
 
-function_with_positional_arguments_complex_type(veg_set)
+    max_element = items[0]
+    for item in items:
+        print(item)
+        if item > max_element:
+            max_element = item
+    return max_element
+
+result_max = function_with_positional_arguments_complex_type(int_tuple)
+print("Maximum element is ", result_max)
