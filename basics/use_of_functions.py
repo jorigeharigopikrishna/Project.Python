@@ -16,6 +16,16 @@ function_copy()
 
 
 # Function returning integer
+def function_with_assert(number):
+    assert number > 0  # Used for assertion check
+    print("Assertion function")
+
+
+function_with_assert(2)  # No Assertion error
+function_with_assert(-5)  # Assertion error
+
+
+# Function returning integer
 def function_with_return(number):
     if number > 0:
         return number * number
