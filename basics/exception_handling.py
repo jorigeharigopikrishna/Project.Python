@@ -29,8 +29,8 @@ def func_exception_handling_else(number):
         print("Type Error")
     except NameError:  # Specific Exception
         print("Name Error")
-    except ArithmeticError:  # Specific Exception
-        print("Error")
+    except ArithmeticError as error:  # Specific Exception
+        print("Error: ", error)
     except:  # General Exception
         print("Unknown Error")
     else:  # Use of else block
