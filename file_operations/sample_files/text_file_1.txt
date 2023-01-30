@@ -1,0 +1,3 @@
+Welcome to the python file operations.
+This is a text file.
+Performing operations on the file.
