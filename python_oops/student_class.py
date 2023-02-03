@@ -37,6 +37,9 @@ class Student:
         self.update_course(course)      # Calling another function within the class
         self.update_college(college)    # Calling another function within the class
 
+    name = property(get_name, update_name)  # Name property
+    course = property(get_course, update_course)    # Course property
+    college = property(get_college, update_college)     # College property
 
 student_ab = Student("Ab", "Course", "College-1")
 print(student_ab.get_name())
@@ -53,3 +56,9 @@ student_ab.update_student_details("Ef", "Course-3", "College-3")
 print(student_ab.get_name())
 print(student_ab.get_course())
 print(student_ab.get_college())
+student_ab.name = "Gh"  # Triggers custom setter update_name() of name property()
+student_ab.course = "Course-4"  # Triggers custom setter update_course() of course property()
+student_ab.college = "College-4"    # Triggers custom setter update_college() of college property()
+print(student_ab.name)  # Triggers custom getter get_name() of name property()
+print(student_ab.course)    # Triggers custom getter get_course() of course property()
+print(student_ab.college)   # Triggers custom getter get_college() of college property()

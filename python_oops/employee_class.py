@@ -13,25 +13,36 @@ class Employee:             # Class Declaration
         self.__job_role = role                      # private object attribute - self.__job_role is instance variable
         self.__skills = skillset                    # private object attribute - self.__skills is instance variable
 
-    def __repr__(self):
+    def __len__(self):  # invoked on len() method
         pass
 
-    def __str__(self):
+    # Use of __iter__() and __next__() for looping over the elements in a collection of a class member variable.
+    def __iter__(self):  # invoked on looping over the collection. Returns current index.
+        pass                 # Can be invoked on using iter() method
+
+    def __next__(self):  # invoked on looping over the collection for the next item.
+        pass             # Returns the element at that index and increments the index.
+                         # Looping goes on until it finds StopIteration error in __next__() method.
+
+    def __repr__(self):     # invoked on repr() method or class name or object variable
         pass
 
-    def __add__(self, other):
+    def __str__(self):  # invoked on print(), help(), str() method
         pass
 
-    def __sub__(self, other):
+    def __add__(self, other):   # invoked on + operator
         pass
 
-    def __mul__(self, other):
+    def __sub__(self, other):   # invoked on - operator
         pass
 
-    def __floordiv__(self, other):
+    def __mul__(self, other):   # invoked on * operator
         pass
 
-    def __mod__(self, other):
+    def __floordiv__(self, other):      # invoked on // operator
+        pass
+
+    def __mod__(self, other):       # invoked on % operator
         pass
 
     def get_details(self):      # Use of self to access specific object
