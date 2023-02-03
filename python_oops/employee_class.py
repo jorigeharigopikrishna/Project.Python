@@ -13,6 +13,27 @@ class Employee:             # Class Declaration
         self.__job_role = role                      # private object attribute - self.__job_role is instance variable
         self.__skills = skillset                    # private object attribute - self.__skills is instance variable
 
+    def __repr__(self):
+        pass
+
+    def __str__(self):
+        pass
+
+    def __add__(self, other):
+        pass
+
+    def __sub__(self, other):
+        pass
+
+    def __mul__(self, other):
+        pass
+
+    def __floordiv__(self, other):
+        pass
+
+    def __mod__(self, other):
+        pass
+
     def get_details(self):      # Use of self to access specific object
         return f"Employee name is {self.name} and company is {Employee.company}"    # self.name is instance variable and Employee.company is class variable.
 
